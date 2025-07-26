@@ -1,0 +1,73 @@
+{
+  "name": "@perry/lego-ui",
+  "version": "1.0.0",
+  "description": "A Vue 3 component library built with TypeScript and Vite",
+  "main": "dist/lego-ui.umd.js",
+  "module": "dist/lego-ui.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/lego-ui.es.js",
+      "require": "./dist/lego-ui.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "build:lib": "vue-tsc && vite build --mode lib",
+    "preview": "vite preview",
+    "docs:dev": "vite --config docs/vite.config.ts",
+    "docs:build": "vite build --config docs/vite.config.ts",
+    "docs:preview": "vite preview --config docs/vite.config.ts",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "typescript",
+    "component-library",
+    "ui",
+    "vite"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perry/lego-ui.git"
+  },
+  "homepage": "https://github.com/perry/lego-ui#readme",
+  "bugs": {
+    "url": "https://github.com/perry/lego-ui/issues"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/tsconfig": "^0.4.0",
+    "eslint": "^8.47.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "prettier": "^3.0.0",
+    "typescript": "~5.1.6",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.3",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.5"
+  }
+}

@@ -1,0 +1,68 @@
+/* Lego UI 组件库基础样式 */
+
+/* CSS 重置 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 基础颜色变量 */
+:root {
+  --lego-color-primary: #409eff;
+  --lego-color-success: #67c23a;
+  --lego-color-warning: #e6a23c;
+  --lego-color-danger: #f56c6c;
+  --lego-color-info: #909399;
+  
+  --lego-color-primary-light-1: #53a8ff;
+  --lego-color-primary-light-2: #66b1ff;
+  --lego-color-primary-light-3: #79bbff;
+  --lego-color-primary-light-4: #8cc5ff;
+  --lego-color-primary-light-5: #a0cfff;
+  --lego-color-primary-light-6: #b3d8ff;
+  --lego-color-primary-light-7: #c6e2ff;
+  --lego-color-primary-light-8: #d9ecff;
+  --lego-color-primary-light-9: #ecf5ff;
+  
+  --lego-color-primary-dark-1: #3a8ee6;
+  --lego-color-primary-dark-2: #337ecc;
+  
+  --lego-color-text-primary: #303133;
+  --lego-color-text-regular: #606266;
+  --lego-color-text-secondary: #909399;
+  --lego-color-text-placeholder: #c0c4cc;
+  
+  --lego-border-color: #dcdfe6;
+  --lego-border-color-light: #e4e7ed;
+  --lego-border-color-lighter: #ebeef5;
+  --lego-border-color-extra-light: #f2f6fc;
+  
+  --lego-background-color: #ffffff;
+  --lego-background-color-base: #f5f7fa;
+  
+  --lego-border-radius-base: 4px;
+  --lego-border-radius-small: 2px;
+  
+  --lego-font-size-extra-large: 20px;
+  --lego-font-size-large: 18px;
+  --lego-font-size-medium: 16px;
+  --lego-font-size-base: 14px;
+  --lego-font-size-small: 13px;
+  --lego-font-size-extra-small: 12px;
+  
+  --lego-transition-duration: 0.3s;
+  --lego-transition-function-ease-in-out-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* 组件前缀类 */
+.lego-component {
+  box-sizing: border-box;
+}
+
+/* 清除浮动 */
+.lego-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+} 
