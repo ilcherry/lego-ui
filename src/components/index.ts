@@ -1,18 +1,10 @@
 import Button from './Button'
-import type { App } from 'vue'
-
-// 所有组件
-const components = [Button]
+import type { App, Plugin } from 'vue'
 
 // 全量导入安装函数
 const install = (app: App) => {
-  components.forEach(component => {
-    if (component.install) {
-      app.use(component)
-    } else {
-      app.component(component.name || component.__name, component)
-    }
-  })
+  // 直接注册 Button 组件，因为它有 install 方法
+  app.use(Button as unknown as Plugin)
 }
 
 // 按需导出
