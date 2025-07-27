@@ -1,5 +1,5 @@
 {
-  "name": "@perry/lego-ui",
+  "name": "@ilcherry/lego-ui",
   "version": "1.0.0",
   "description": "A Vue 3 component library built with TypeScript and Vite",
   "main": "dist/lego-ui.umd.js",
@@ -46,9 +46,9 @@
     "type": "git",
     "url": "https://github.com/ilcherry/lego-ui"
   },
-  "homepage": "https://github.com/perry/lego-ui#readme",
+  "homepage": "https://github.com/ilcherry/lego-ui#readme",
   "bugs": {
-    "url": "https://github.com/perry/lego-ui/issues"
+    "url": "https://github.com/ilcherry/lego-ui/issues"
   },
   "peerDependencies": {
     "vue": "^3.3.0"
