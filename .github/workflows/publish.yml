@@ -163,8 +163,9 @@ jobs:
         run: npm run docs:build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./docs/dist
+          folder: ./docs/dist
+          clean: true
+          branch: main
