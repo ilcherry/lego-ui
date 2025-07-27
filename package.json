@@ -1,7 +1,7 @@
 {
   "name": "@ilcherry/lego-ui",
   "version": "1.0.0",
-  "description": "A Vue 3 component library built with TypeScript and Vite",
+  "description": "A Vue 3 component library built with TypeScript and Vite!",
   "main": "dist/lego-ui.umd.js",
   "module": "dist/lego-ui.es.js",
   "types": "dist/index.d.ts",
