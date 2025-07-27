@@ -35,7 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 import type { ButtonProps } from './types'
 
 const props = withDefaults(defineProps<ButtonProps>(), {
