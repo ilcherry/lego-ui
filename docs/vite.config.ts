@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   base: '/lego-ui/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs/dist',
     assetsDir: 'assets'
   },
   resolve: {
@@ -19,4 +19,4 @@ export default defineConfig({
     port: 3001,
     open: true
   }
-}) 
+})
